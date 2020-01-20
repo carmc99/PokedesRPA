@@ -13,7 +13,26 @@ namespace PokedesRPA.com.pokedex
   
         public Pokedex()
         {
-            
+      
+        }
+
+        public string open()
+        {
+            /*
+            Console.WriteLine("================ Bienvenido a Pokedex ================");
+            Console.WriteLine("Seleccione una operacion en la pokedex:");
+            Console.WriteLine("1. Descargar imagen ");
+            Console.WriteLine("2. Buscar pokemon ");
+            Console.WriteLine("3. Salir ");
+            Console.WriteLine("=======================================================");
+            int option = Console.Read();
+            */
+            Console.Clear();
+            Console.WriteLine("================ Pokedex ==============================");
+            Console.WriteLine("Ingrese el nombre del pokemon: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("=======================================================");
+            return name;
         }
 
         public void getAll()
@@ -31,25 +50,11 @@ namespace PokedesRPA.com.pokedex
                 Console.WriteLine("=================");
             }
         }
-        public void show(int id)
-        {
-
-        }
 
         public void register(Dictionary<string, object> pokemonData)
         {
             Pokemon pokemon = new Pokemon(pokemonData);
             listPokemons.Add(pokemon);
-        }
-
-        public void update(int id)
-        {
-
-        }
-
-        public void delete(int id)
-        {
-
         }
     }
 }

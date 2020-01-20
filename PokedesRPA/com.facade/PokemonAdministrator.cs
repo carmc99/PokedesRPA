@@ -18,9 +18,14 @@ namespace PokedesRPA.com.facade
             
         }
 
-        public void showAll()
+        public Pokedex pokedex()
         {
+            return new Pokedex();
+        }
 
+        public PokemonSearcher pokemonSearcher()
+        {
+            return new PokemonSearcher();
         }
 
 
